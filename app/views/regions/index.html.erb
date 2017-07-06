@@ -1,0 +1,14 @@
+<table class="table">
+  <tr>
+    <th>Juhe Code</th>
+    <th>Freq</th>
+    <th>Region</th>
+  </tr>
+  <% @regions.each do |region| %>
+  <tr>
+    <td><%= region.juhe_code %></td>
+    <td><%= region.freq %></td>
+    <td><%= region.region %></td>
+  </tr>
+  <% end %>
+</table>

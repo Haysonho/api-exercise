@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  resources :cities
+
+  resources :regions
+  resources :cities do
+    member do
+      post :update_temp
+    end
+  end
 end
